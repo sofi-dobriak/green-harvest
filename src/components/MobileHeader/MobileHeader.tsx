@@ -3,10 +3,13 @@ import mobLogoWebp from '../../assets/images/mobLogo.webp';
 
 import mobLogo2x from '../../assets/images/mobLogo2x.png';
 import mobLogo2xWebp from '../../assets/images/mobLogo2x.webp';
+import useModalStore from '../../zustand/mobile';
 
 const MobileHeader = () => {
+  const { openMenu } = useModalStore();
+
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between fixed top-5 left-0 w-full px-5'>
       <a href='#'>
         <picture>
           <source
@@ -23,7 +26,10 @@ const MobileHeader = () => {
         </picture>
       </a>
 
-      <button className='flex items-center justify-center cursor-pointer group focus:outline-none'>
+      <button
+        onClick={() => openMenu()}
+        className='flex items-center justify-center cursor-pointer group focus:outline-none'
+      >
         <svg
           width={32}
           height={32}

@@ -2,7 +2,7 @@ import TabDeskLogo from '../TabDeskLogo.tsx/TabDeskLogo';
 
 const DesktopHeader = () => {
   return (
-    <div className='flex items-center justify-between'>
+    <div className='flex items-center justify-between fixed top-5 left-0 w-full px-25'>
       <TabDeskLogo />
 
       <div className='flex items-center gap-5'>
@@ -10,7 +10,7 @@ const DesktopHeader = () => {
           <li>
             <a
               href='#'
-              className='flex items-center w-full border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+              className='flex items-center w-full border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
             >
               How It Works
             </a>
@@ -18,7 +18,7 @@ const DesktopHeader = () => {
           <li>
             <a
               href='#'
-              className='flex items-center w-full border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+              className='flex items-center w-full border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
             >
               How It Works
             </a>
@@ -26,7 +26,7 @@ const DesktopHeader = () => {
           <li>
             <a
               href='#'
-              className='flex items-center  w-full border border-[#fbfbfb] rounded-xl p-3  hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
+              className='flex items-center  w-full border border-[#fbfbfb] rounded-xl p-3  hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
             >
               Reviews
             </a>

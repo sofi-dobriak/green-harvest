@@ -1,43 +1,42 @@
 import { useMediaQuery } from 'react-responsive';
+import useModalStore from '../../zustand/mobile';
+import clsx from 'clsx';
 
 const MobileMenu = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 767 });
   const isTablet: boolean = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
 
+  const { isOpen, closeMenu } = useModalStore();
+
   return (
-    <div className='bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999'>
-      <div className='bg-[#576f35] h-full w-full max-w-[375px] relative p-[52px] flex justify-center'>
-        {isMobile && (
-          <button className='flex items-center justify-center cursor-pointer group focus:outline-none'>
+    <div
+      onClick={() => closeMenu()}
+      className={clsx(
+        'bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999 transition-all duration-300 ease-in-out',
+        isOpen
+          ? 'translate-x-0 opacity-100 visible pointer-events-auto'
+          : '-translate-x-full opacity-0 invisible pointer-events-none'
+      )}
+    >
+      <div
+        onClick={e => e.stopPropagation()}
+        className='bg-[#576f35] h-full w-full max-w-[375px] relative p-[52px] flex justify-center'
+      >
+        {(isMobile || isTablet) && (
+          <button
+            onClick={() => closeMenu()}
+            className='flex items-center justify-center cursor-pointer group focus:outline-none'
+          >
             <svg
-              width={32}
-              height={32}
+              width={isMobile ? 32 : 40}
+              height={isMobile ? 32 : 40}
               className='stroke-[#fbfbfb] stroke-2 group-hover:stroke-[#7a3145] group-focus:stroke-[#7a3145] duration-300 ease-in-out absolute top-5 right-5'
             >
               (
               <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='3'
-                d='M24 8 8 24M8 8l16 16'
-              />
-              )
-            </svg>
-          </button>
-        )}
-
-        {isTablet && (
-          <button className='flex items-center justify-center cursor-pointer group focus:outline-none'>
-            <svg
-              width={40}
-              height={40}
-              className='stroke-[#fbfbfb] stroke-2 group-hover:stroke-[#7a3145] group-focus:stroke-[#7a3145] duration-300 ease-in-out  absolute top-5 right-5'
-            >
-              (
-              <path
-                stroke-linecap='round'
-                stroke-linejoin='round'
-                stroke-width='3.2'
+                strokeLinecap='round'
+                strokeLinejoin='round'
+                strokeWidth='3'
                 d='M24 8 8 24M8 8l16 16'
               />
               )

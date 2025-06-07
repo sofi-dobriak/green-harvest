@@ -9,11 +9,11 @@ const Header = () => {
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
 
   return (
-    <>
+    <header>
       {isMobile && <MobileHeader />}
       {isTablet && <TabletHeader />}
       {isDesktop && <DesktopHeader />}
-    </>
+    </header>
   );
 };
 
