@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import HeroScreen from './components/HeroScreen/HeroScreen';
 import AboutScreen from './components/AboutScreen/AboutScreen';
+import Container from './components/Container/Container';
 
 function App() {
   const isDesktop = useMediaQuery({ minWidth: 1280 });
@@ -11,8 +12,14 @@ function App() {
   return (
     <>
       <Header />
-      <HeroScreen />
-      <AboutScreen />
+
+      <main>
+        <Container>
+          <HeroScreen />
+          <AboutScreen />
+        </Container>
+      </main>
+
       {!isDesktop && <MobileMenu />}
     </>
   );
