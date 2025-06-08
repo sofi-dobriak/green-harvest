@@ -1,18 +1,11 @@
-import { useMediaQuery } from 'react-responsive';
-import MobileHeader from '../MobileHeader/MobileHeader';
-import TabletHeader from '../TabletHeader/TabletHeader';
-import DesktopHeader from '../DesktopHeader/DesktopHeader';
+import Logo from '../Logo/Logo';
+import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
-  const isMobile: boolean = useMediaQuery({ maxWidth: 767 });
-  const isTablet: boolean = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
-  const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
-
   return (
-    <header>
-      {isMobile && <MobileHeader />}
-      {isTablet && <TabletHeader />}
-      {isDesktop && <DesktopHeader />}
+    <header className='flex items-center justify-between fixed w-full py-2.5 px-5 md:px-5 xl:py-4 xl:px-25 bg-[rgba(20,20,20,0.05)] backdrop-blur-lg'>
+      <Logo />
+      <Navigation />
     </header>
   );
 };

@@ -4,7 +4,7 @@ import clsx from 'clsx';
 
 const MobileMenu = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 767 });
-  const isTablet: boolean = useMediaQuery({ minWidth: 768, maxWidth: 1279 });
+  const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
 
   const { isOpen, closeMenu } = useModalStore();
 
@@ -22,7 +22,7 @@ const MobileMenu = () => {
         onClick={e => e.stopPropagation()}
         className='bg-[#576f35] h-full w-full max-w-[375px] relative p-[52px] flex justify-center'
       >
-        {(isMobile || isTablet) && (
+        {!isDesktop && (
           <button
             onClick={() => closeMenu()}
             className='flex items-center justify-center cursor-pointer group focus:outline-none'
