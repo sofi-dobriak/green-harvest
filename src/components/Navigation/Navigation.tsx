@@ -35,7 +35,7 @@ const Navigation = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
+                className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb]  focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
               >
                 How It Works
               </a>
@@ -43,7 +43,7 @@ const Navigation = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+                className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
               >
                 Vegetables
               </a>
@@ -51,7 +51,7 @@ const Navigation = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center  w-full border border-[#fbfbfb] text-[#fbfbfb] rounded-xl p-3  hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145] focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
+                className='flex items-center  w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3  hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb]  focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
               >
                 Reviews
               </a>
@@ -60,7 +60,7 @@ const Navigation = () => {
 
           <button
             type='button'
-            className='flex items-center justify-center text-[#fbfbfb] border-2 border-[#7a3145] bg-[#7a3145] rounded-4xl py-3 px-6 cursor-pointer hover:bg-[#fbfbfb] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-300 ease-in-out'
+            className='flex items-center justify-center text-[#fbfbfb] text-[16px] bg-[#7a3145] rounded-4xl py-3 px-6 cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-300 ease-in-out'
           >
             Shop now
           </button>

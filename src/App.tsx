@@ -3,12 +3,13 @@ import './App.css';
 import Header from './components/Header/Header';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import HeroScreen from './components/HeroScreen/HeroScreen';
-import AboutScreen from './components/AboutScreen/AboutScreen';
+import HowItWorksScreen from './components/HowItWorksScreen/HowItWorksScreen';
 import Container from './components/Container/Container';
-import Discount from './components/Discount/Discount';
+import Advertisement from './components/Advertisement/Advertisement';
+import VegetableList from './components/VegetableList/VegetableList';
 
 function App() {
-  const isDesktop = useMediaQuery({ minWidth: 1280 });
+  const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
 
   return (
     <>
@@ -17,9 +18,10 @@ function App() {
       <main>
         <Container>
           <HeroScreen />
-          <AboutScreen />
+          <HowItWorksScreen />
+          <Advertisement />
+          <VegetableList />
         </Container>
-        <Discount />
       </main>
 
       {!isDesktop && <MobileMenu />}

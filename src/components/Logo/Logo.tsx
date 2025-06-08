@@ -1,14 +1,14 @@
 import { useMediaQuery } from 'react-responsive';
 
-import mobLogo from '../../assets/images/mobLogo.png';
-import mobLogoWebp from '../../assets/images/mobLogo.webp';
-import mobLogo2x from '../../assets/images/mobLogo2x.png';
-import mobLogo2xWebp from '../../assets/images/mobLogo2x.webp';
+import mobLogo from '/images/mobLogo.png';
+import mobLogoWebp from '/images/mobLogo.webp';
+import mobLogo2x from '/images/mobLogo2x.png';
+import mobLogo2xWebp from '/images/mobLogo2x.webp';
 
-import tabLogo from '../../assets/images/tabLogo.png';
-import tabLogoWebp from '../../assets/images/tabLogo.webp';
-import tabLogo2x from '../../assets/images/tabLogo@2x.png';
-import tabLogo2xWebp from '../../assets/images/tabLogo@2x.webp';
+import tabLogo from '/images/tabLogo.png';
+import tabLogoWebp from '/images/tabLogo.webp';
+import tabLogo2x from '/images/tabLogo@2x.png';
+import tabLogo2xWebp from '/images/tabLogo@2x.webp';
 
 const Logo = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 375 });

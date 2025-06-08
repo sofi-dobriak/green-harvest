@@ -1,17 +1,17 @@
-import mobHeroJPG from '../../assets/images/mobHero.jpg';
-import mobHeroJPG2x from '../../assets/images/mobHero2x.jpg';
-import mobHeroWEBP from '../../assets/images/mobHero.webp';
-import mobHeroWEBP2x from '../../assets/images/mobHero2x.webp';
+import mobHeroJPG from '/images/mobHero.jpg';
+import mobHeroJPG2x from '/images/mobHero2x.jpg';
+import mobHeroWEBP from '/images/mobHero.webp';
+import mobHeroWEBP2x from '/images/mobHero2x.webp';
 
-import tabHeroJPG from '../../assets/images/tabHero.jpg';
-import tabHeroJPG2x from '../../assets/images/tabHero2x.jpg';
-import tabHeroWEBP from '../../assets/images/tabHero.webp';
-import tabHeroWEBP2x from '../../assets/images/tabHero2x.webp';
+import tabHeroJPG from '/images/tabHero.jpg';
+import tabHeroJPG2x from '/images/tabHero2x.jpg';
+import tabHeroWEBP from '/images/tabHero.webp';
+import tabHeroWEBP2x from '/images/tabHero2x.webp';
 
-import deskHeroJPG from '../../assets/images/deskHero.jpg';
-import deskHeroJPG2x from '../../assets/images/deskHero2x.jpg';
-import deskHeroWEBP from '../../assets/images/deskHero.webp';
-import deskHeroWEBP2x from '../../assets/images/deskHero2x.webp';
+import deskHeroJPG from '/images/deskHero.jpg';
+import deskHeroJPG2x from '/images/deskHero2x.jpg';
+import deskHeroWEBP from '/images/deskHero.webp';
+import deskHeroWEBP2x from '/images/deskHero2x.webp';
 import Container from '../Container/Container';
 
 const HeroScreen = () => {

@@ -1,22 +1,22 @@
-import mobAboutPNG from '../../assets/images/mobAbout.png';
-import mobAboutPNG2x from '../../assets/images/mobAbout2x.png';
-import mobAboutWEBP from '../../assets/images/mobAbout.webp';
-import mobAboutWEBP2x from '../../assets/images/mobAbout2x.webp';
+import mobAboutPNG from '/images/mobAbout.png';
+import mobAboutPNG2x from '/images/mobAbout2x.png';
+import mobAboutWEBP from '/images/mobAbout.webp';
+import mobAboutWEBP2x from '/images/mobAbout2x.webp';
 
-import tabAboutPNG from '../../assets/images/tabAbout.png';
-import tabAboutPNG2x from '../../assets/images/tabAbout2x.png';
-import tabAboutWEBP from '../../assets/images/tabAbout.webp';
-import tabAboutWEBP2x from '../../assets/images/tabAbout2x.webp';
+import tabAboutPNG from '/images/tabAbout.png';
+import tabAboutPNG2x from '/images/tabAbout2x.png';
+import tabAboutWEBP from '/images/tabAbout.webp';
+import tabAboutWEBP2x from '/images/tabAbout2x.webp';
 
-import deskAboutPNG from '../../assets/images/deskAbout.png';
-import deskAboutPNG2x from '../../assets/images/deskAbout2x.png';
-import deskAboutWEBP from '../../assets/images/deskAbout.webp';
-import deskAboutWEBP2x from '../../assets/images/deskAbout2x.webp';
+import deskAboutPNG from '/images/deskAbout.png';
+import deskAboutPNG2x from '/images/deskAbout2x.png';
+import deskAboutWEBP from '/images/deskAbout.webp';
+import deskAboutWEBP2x from '/images/deskAbout2x.webp';
 
-const AboutScreen = () => {
+const HowItWorksScreen = () => {
   return (
-    <section className='xl:flex'>
-      <div className='bg-[#7a3145] w-full py-10 px-5 md:py-25 md:px-16 xl:p-25  xl:max-w-[640px]'>
+    <section className='xl:flex '>
+      <div className='bg-[#7a3145] w-full py-10 px-5 md:py-25 md:px-16 xl:p-25 xl:max-w-[640px]'>
         <picture>
           <source
             media='(min-width:1280px)'
@@ -67,17 +67,18 @@ const AboutScreen = () => {
         </p>
 
         <ul>
-          <li className='py-3 px-5 bg-[#fbfbfb] border border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+          <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
             <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
               <p className='font-semibold text-[18px] text-[#fbfbfb]'>1</p>
             </div>
             <p className='font-medium text-[#858585] text-[14px] md:text-[16px]'>
               Just choose <span className='font-bold text-[#141414]'>the vegetable</span> you want
-              to order by clicking on the checkboxes{' '}
+              to order by clicking on the checkboxes
               <span className='font-bold text-[#141414]'>next to it.</span>
             </p>
           </li>
-          <li className='py-3 px-5 bg-[#fbfbfb] border border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+
+          <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
             <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
               <p className='font-semibold text-[18px] text-[#fbfbfb]'>2</p>
             </div>
@@ -86,12 +87,13 @@ const AboutScreen = () => {
               form.
             </p>
           </li>
-          <li className='py-3 px-5 bg-[#fbfbfb] border border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+
+          <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#fbfbfb] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
             <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
               <p className='font-semibold text-[18px] text-[#fbfbfb]'>3</p>
             </div>
             <p className='font-medium text-[#858585] text-[14px] md:text-[16px]'>
-              Sit back and relax! Your{' '}
+              Sit back and relax! Your
               <span className='font-bold text-[#141414]'>fresh vegetables</span> basket will be
               delivered.
             </p>
@@ -102,4 +104,4 @@ const AboutScreen = () => {
   );
 };
 
-export default AboutScreen;
+export default HowItWorksScreen;

@@ -5,7 +5,7 @@
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/inter-tight-v8-latin-regular.woff2') format('woff2');
+  src: url('/fonts/inter-tight-v8-latin-regular.woff2') format('woff2');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/inter-tight-v8-latin-500.woff2') format('woff2');
+  src: url('/fonts/inter-tight-v8-latin-500.woff2') format('woff2');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 600;
-  src: url('./assets/fonts/inter-tight-v8-latin-600.woff2') format('woff2');
+  src: url('/fonts/inter-tight-v8-latin-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,7 +29,7 @@
   font-family: 'Inter Tight';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/inter-tight-v8-latin-700.woff2') format('woff2');
+  src: url('/fonts/inter-tight-v8-latin-700.woff2') format('woff2');
 }
 
 :root {
@@ -49,4 +49,17 @@ body {
   font-size: var(--font-size);
   line-height: var(--line-height);
   height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
