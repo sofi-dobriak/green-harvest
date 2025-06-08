@@ -49,7 +49,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center  justify-center w-[118px] border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
+                className='flex items-center  justify-center w-[118px] border text-[#fbfbfb] border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145] duration-300 ease-in-out cursor-pointer'
               >
                 How It Works
               </a>
@@ -57,7 +57,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center w-[118px] border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+                className='flex items-center justify-center w-[118px] border text-[#fbfbfb] border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
               >
                 Vegetables
               </a>
@@ -65,7 +65,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center w-[118px] border border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer '
+                className='flex items-center justify-center w-[118px] border text-[#fbfbfb] border-[#fbfbfb] rounded-xl p-3 hover:bg-[#fbfbfb]  focus:bg-[#fbfbfb] hover:text-[#7a3145]  focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer '
               >
                 Reviews
               </a>
@@ -74,7 +74,7 @@ const MobileMenu = () => {
 
           <button
             type='button'
-            className='w-full min-w-[176px] h-[52px] border-2 border-[#7a3145] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#fbfbfb] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-300 ease-in-out'
+            className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] border-2 border-[#7a3145] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#fbfbfb] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-300 ease-in-out'
           >
             Shop now
           </button>
