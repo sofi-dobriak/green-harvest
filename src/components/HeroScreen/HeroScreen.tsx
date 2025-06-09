@@ -16,7 +16,7 @@ import Container from '../Container/Container';
 
 const HeroScreen = () => {
   return (
-    <section className='xl:flex xl:items-center'>
+    <section className='xl:flex xl:items-center xl:justify-center'>
       <Container>
         <h1 className='uppercase font-semibold text-[44px] md:text-[70px] leading-none md:max-w-[704px] xl:max-w-[502px] text-[#fbfbfb] mb-5 md:mb-6 xl:mb-32 pt-[100px] px-5 md:px-8 xl:px-0'>
           organic vegetables to your diet today!
@@ -29,48 +29,46 @@ const HeroScreen = () => {
         </p>
       </Container>
 
-      <div className='w-full xl:w-auto xl:max-w-[50%]'>
-        <picture className='w-full block'>
-          <source
-            media='(min-width:768px)'
-            type='image/webp'
-            srcSet={`${deskHeroWEBP} 1x, ${deskHeroWEBP2x} 2x`}
-          />
-          <source
-            media='(min-width:768px) '
-            type='image/jpg'
-            srcSet={`${deskHeroJPG} 1x, ${deskHeroJPG2x} 2x`}
-          />
+      <picture className='w-full xl:w-[1280px] xl:max-w-[50%] '>
+        <source
+          media='(min-width:768px)'
+          type='image/webp'
+          srcSet={`${deskHeroWEBP} 1x, ${deskHeroWEBP2x} 2x`}
+        />
+        <source
+          media='(min-width:768px) '
+          type='image/jpg'
+          srcSet={`${deskHeroJPG} 1x, ${deskHeroJPG2x} 2x`}
+        />
 
-          <source
-            media='(min-width:768px)'
-            type='image/webp'
-            srcSet={`${tabHeroWEBP} 1x, ${tabHeroWEBP2x} 2x`}
-          />
-          <source
-            media='(min-width:768px) '
-            type='image/jpg'
-            srcSet={`${tabHeroJPG} 1x, ${tabHeroJPG2x} 2x`}
-          />
+        <source
+          media='(min-width:768px)'
+          type='image/webp'
+          srcSet={`${tabHeroWEBP} 1x, ${tabHeroWEBP2x} 2x`}
+        />
+        <source
+          media='(min-width:768px) '
+          type='image/jpg'
+          srcSet={`${tabHeroJPG} 1x, ${tabHeroJPG2x} 2x`}
+        />
 
-          <source
-            media='(max-width:767px)'
-            type='image/webp'
-            srcSet={`${mobHeroWEBP} 1x, ${mobHeroWEBP2x} 2x`}
-          />
-          <source
-            media='(max-width:767px)'
-            type='image/jpg'
-            srcSet={`${mobHeroJPG} 1x, ${mobHeroJPG2x} 2x`}
-          />
+        <source
+          media='(max-width:767px)'
+          type='image/webp'
+          srcSet={`${mobHeroWEBP} 1x, ${mobHeroWEBP2x} 2x`}
+        />
+        <source
+          media='(max-width:767px)'
+          type='image/jpg'
+          srcSet={`${mobHeroJPG} 1x, ${mobHeroJPG2x} 2x`}
+        />
 
-          <img
-            src={mobHeroJPG}
-            alt='Image with vegetables'
-            className='w-full max-w-[1280px] xl:max-w-[640px]  max-h-[536px] xl:max-h-[796px] object-cover block '
-          />
-        </picture>
-      </div>
+        <img
+          src={mobHeroJPG}
+          alt='Image with vegetables'
+          className='object-cover block w-full max-w-[1280px] xl:max-w-[640px]  max-h-[536px] xl:max-h-[796px]'
+        />
+      </picture>
     </section>
   );
 };

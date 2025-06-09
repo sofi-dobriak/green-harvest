@@ -1,1 +1,47 @@
-[]
+[
+  {
+    "id": 1,
+    "name": "John Wax",
+    "review": "These vegetables are my secret to delicious and healthy meals. The quality is always at the highest level, the aroma and taste are enchanting. I advise every fan of real products!",
+    "imagePNG": "/images/feedbackOne.png",
+    "imagePNG2x": "/images/feedbackOne2x.png",
+    "imageWEBP": "/images/feedbackOne.webp",
+    "imageWEBP2x": "/images/feedbackOne2x.webp"
+  },
+  {
+    "id": 2,
+    "name": "Victoria Romashenko",
+    "review": "I love how fast and fresh the vegetables are delivered. Salads always turn out so appetizing, and soups are real masterpieces. The quality is impeccable!",
+    "imagePNG": "/images/feedbackTwo.png",
+    "imagePNG2x": "/images/feedbackTwo.png",
+    "imageWEBP": "/images/feedbackTwo.webp",
+    "imageWEBP2x": "/images/feedbackTwo.webp"
+  },
+  {
+    "id": 3,
+    "name": "Ihor Trachuk",
+    "review": "Recently tried my fresh tomatoes and peppers - amazing! The authenticity of the taste, as if from the garden directly to my table. It is now my main vegetable supplier.",
+    "imagePNG": "/images/feedbackThree.png",
+    "imagePNG2x": "/images/feedbackThree.png",
+    "imageWEBP": "/images/feedbackThree.webp",
+    "imageWEBP2x": "/images/feedbackThree.webp"
+  },
+  {
+    "id": 4,
+    "name": "Olena Petrenko",
+    "review": "Absolutely impressed with the service! The vegetables arrive perfectly fresh, as if just picked from the garden. My family notices the difference in taste immediately. Highly recommend to everyone!",
+    "imagePNG": "/images/feedbackTwo.png",
+    "imagePNG2x": "/images/feedbackTwo.png",
+    "imageWEBP": "/images/feedbackTwo.webp",
+    "imageWEBP2x": "/images/feedbackTwo.webp"
+  },
+  {
+    "id": 5,
+    "name": "Andriy Kovalenko",
+    "review": "Great quality and fast delivery! I've been ordering vegetables here for several months now. Everything is always fresh, well-packaged, and arrives on time. Perfect for busy people like me.",
+    "imagePNG": "/images/feedbackThree.png",
+    "imagePNG2x": "/images/feedbackThree.png",
+    "imageWEBP": "/images/feedbackThree.webp",
+    "imageWEBP2x": "/images/feedbackThree.webp"
+  }
+]

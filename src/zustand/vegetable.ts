@@ -4,12 +4,10 @@ import type { Vegetable } from '../types/vegetable';
 
 interface VegetablesStore {
   vegetables: Vegetable[];
-  setVegetables: (vegetables: Vegetable[]) => void;
 }
 
-const useVegetablesStore = create<VegetablesStore>(set => ({
+const useVegetablesStore = create<VegetablesStore>(() => ({
   vegetables: vegetablesData,
-  setVegetables: vegetables => set({ vegetables }),
 }));
 
 export default useVegetablesStore;
