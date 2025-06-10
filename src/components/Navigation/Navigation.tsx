@@ -34,7 +34,7 @@ const Navigation = () => {
           <ul className='flex items-center gap-2'>
             <li>
               <a
-                href='#'
+                href='#works'
                 className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb]  focus:text-[#7a3145] duration-150 ease-in-out cursor-pointer'
               >
                 How It Works
@@ -42,7 +42,7 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='#vegetables'
                 className='flex items-center w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 Vegetables
@@ -50,7 +50,7 @@ const Navigation = () => {
             </li>
             <li>
               <a
-                href='#'
+                href='#reviews'
                 className='flex items-center  w-full border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3  hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb]  focus:text-[#7a3145] duration-150 ease-in-out cursor-pointer'
               >
                 Reviews

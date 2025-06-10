@@ -58,25 +58,25 @@ const MobileMenu = () => {
 
         <div className='flex flex-col justify-between'>
           <ul className='flex flex-col gap-5 items-center m-auto'>
-            <li>
+            <li onClick={closeMenu}>
               <a
-                href='#'
+                href='#works'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 How It Works
               </a>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <a
-                href='#'
+                href='#vegetables'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 Vegetables
               </a>
             </li>
-            <li>
+            <li onClick={closeMenu}>
               <a
-                href='#'
+                href='#reviews'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 Reviews

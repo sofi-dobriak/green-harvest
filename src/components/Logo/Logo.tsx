@@ -11,11 +11,11 @@ import tabLogo2x from '/images/tabLogo@2x.png';
 import tabLogo2xWebp from '/images/tabLogo@2x.webp';
 
 const Logo = () => {
-  const isMobile: boolean = useMediaQuery({ maxWidth: 375 });
+  const isTablet: boolean = useMediaQuery({ maxWidth: 768 });
 
   return (
     <>
-      {isMobile && (
+      {isTablet && (
         <a href='#'>
           <picture>
             <source
@@ -33,7 +33,7 @@ const Logo = () => {
         </a>
       )}
 
-      {!isMobile && (
+      {!isTablet && (
         <a href='#'>
           <picture>
             <source

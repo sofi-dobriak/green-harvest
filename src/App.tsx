@@ -8,6 +8,7 @@ import Advertisement from './components/Advertisement/Advertisement';
 import VegetableList from './components/VegetableList/VegetableList';
 import ReviewsList from './components/ReviewsList/ReviewsList';
 import YourOrder from './components/YourOrder/YourOrder';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
@@ -24,6 +25,8 @@ function App() {
         <ReviewsList />
         <YourOrder />
       </main>
+
+      <Footer />
 
       {!isDesktop && <MobileMenu />}
     </>

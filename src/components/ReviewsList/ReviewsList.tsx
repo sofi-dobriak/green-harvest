@@ -14,7 +14,7 @@ const ReviewsList = () => {
   const reviews = useReviewsStore(state => state.reviews);
 
   return (
-    <section className='bg-[#fbfbfb] py-20 px-5 md:px-8 xl:px-25'>
+    <section className='bg-[#fbfbfb] py-20 px-5 md:px-8 xl:px-25' id='reviews'>
       <Container>
         <h2 className='font-semibold text-[48px] md:text-[64px] leading-[1] max-w-[336px] md:max-w-[554px] uppercase text-[#141414] mb-5 md:mb-6'>
           reviews from our <span className='text-[#576f35]'>customers</span>

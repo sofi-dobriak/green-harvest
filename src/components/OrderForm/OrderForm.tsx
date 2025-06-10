@@ -68,7 +68,7 @@ const OrderForm = () => {
                 })}
               />
               <ErrorMessage
-                name='name'
+                name='username'
                 component='span'
                 className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
               />

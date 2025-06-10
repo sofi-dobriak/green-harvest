@@ -6,7 +6,7 @@ const VegetableList = () => {
   const vegetables = useVegetablesStore(state => state.vegetables);
 
   return (
-    <section className='bg-[#7a3145] py-20 px-5 md:px-8 xl:px-25'>
+    <section className='bg-[#7a3145] py-20 px-5 md:px-8 xl:px-25' id='vegetables'>
       <Container>
         <h2 className='uppercase font-semibold text-[#fbfbfb] text-[48px] md:text-[64px] leading-[1] mb-5 md:mb-6'>
           organic <span className='text-[#d4bfc4]'>vegetables</span>

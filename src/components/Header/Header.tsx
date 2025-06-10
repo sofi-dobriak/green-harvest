@@ -19,8 +19,8 @@ const Header = () => {
   return (
     <header
       className={clsx(
-        'fixed w-full py-2.5 px-5 md:px-5 xl:py-4 xl:px-20 backdrop-blur-[3px]  z-998',
-        isScroll ? 'bg-[#576f355c]' : 'bg-transparent'
+        'fixed w-full py-2.5 px-5 md:px-5 xl:py-4 xl:px-20   z-998',
+        isScroll ? 'bg-[#576f355c] backdrop-blur-[3px]' : 'bg-transparent'
       )}
     >
       <div className='flex items-center justify-between w-full max-w-[375px] md:max-w-[768px] xl:max-w-[1280px]  mx-auto '>
