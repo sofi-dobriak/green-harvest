@@ -1,6 +1,5 @@
 [
   {
-    "id": 1,
     "title": "eggplant",
     "mass": "60 USD / kg",
 
@@ -19,7 +18,6 @@
     "description": "Eggplant is rich in antioxidants, particularly nasunin, which supports brain health and helps reduce inflammation."
   },
   {
-    "id": 2,
     "title": "leek",
     "mass": "50 USD / kg",
 
@@ -38,7 +36,6 @@
     "description": "Leek is packed with vitamins A, C, and K, promoting healthy vision, immunity, and strong bones."
   },
   {
-    "id": 3,
     "title": "mushrooms",
     "mass": "40 USD / kg",
 
@@ -57,7 +54,6 @@
     "description": "Mushrooms provide B vitamins and selenium, boosting energy levels and supporting the immune system."
   },
   {
-    "id": 4,
     "title": "corn",
     "mass": "60 USD / kg",
 
@@ -76,7 +72,6 @@
     "description": "Corn is a great source of fiber and antioxidants like lutein, aiding digestion and eye health."
   },
   {
-    "id": 5,
     "title": "sweet potatoes",
     "mass": "50 USD / kg",
 
@@ -95,7 +90,6 @@
     "description": "Sweet potatoes promote gut health with fiber and deliver vitamin C for glowing skin."
   },
   {
-    "id": 6,
     "title": "carrot",
     "mass": "40 USD / kg",
 

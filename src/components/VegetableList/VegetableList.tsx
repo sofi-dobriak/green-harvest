@@ -18,8 +18,8 @@ const VegetableList = () => {
         </p>
 
         <ul className='flex gap-5 md:gap-6 md:flex-row flex-wrap justify-center xl:max-w-[1280px] mx-auto'>
-          {vegetables.map(vegetable => (
-            <VegetableCart key={vegetable.id} {...vegetable} />
+          {vegetables.map((vegetable, index) => (
+            <VegetableCart key={index + 1} {...vegetable} />
           ))}
         </ul>
       </Container>

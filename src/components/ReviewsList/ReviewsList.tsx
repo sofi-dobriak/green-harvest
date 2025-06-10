@@ -1,7 +1,11 @@
 import Container from '../Container/Container';
+import './ReviewsList.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+
+import { Pagination } from 'swiper/modules';
+import 'swiper/css/pagination';
 
 import ReviewCart from '../ReviewCart/ReviewCart';
 import useReviewsStore from '../../zustand/reviews';
@@ -24,15 +28,21 @@ const ReviewsList = () => {
           spaceBetween={24}
           slidesPerView={1}
           loop={true}
+          pagination={{
+            clickable: true,
+            el: '.custom-pagination',
+          }}
+          modules={[Pagination]}
           breakpoints={{
             768: { slidesPerView: 2 },
             1280: { slidesPerView: 3 },
           }}
           wrapperTag='ul'
+          className='custom-swiper'
         >
-          {reviews.map(review => (
+          {reviews.map((review, index) => (
             <SwiperSlide
-              key={review.id}
+              key={index + 1}
               tag='li'
               className='border border-[#d4bfc4] rounded-3xl bg-[#fbfbfb] py-5 px-4 md:px-5 min-h-[250px]'
             >
@@ -40,6 +50,8 @@ const ReviewsList = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        <div className='custom-pagination mt-3 flex justify-center p-4' />
       </Container>
     </section>
   );
