@@ -1,5 +1,4 @@
 export interface Vegetable {
-  id: number;
   title: string;
   mass: string;
   tabImagePNG: string;
