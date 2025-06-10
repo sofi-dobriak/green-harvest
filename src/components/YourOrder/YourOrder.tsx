@@ -80,6 +80,32 @@ const YourOrder = () => {
                 className='block mx-auto mb-4 md:mb-13 xl:mb-20'
               />
             </picture>
+
+            <p className='font-bold text-[14px] md:text-[16px] leading-[1.43] md:leading-[1.25] text-[#d4bfc4] mb-4'>
+              Follow us on our social networks:
+            </p>
+
+            <ul className='flex flex-wrap gap-2'>
+              <li className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] duration-150 ease-in-out'>
+                <a href='https://www.instagram.com/goitclub/' target='_blank'>
+                  instagram
+                </a>
+              </li>
+              <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+
+              <li className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] duration-150 ease-in-out'>
+                <a href='https://www.facebook.com/goITclub/' target='_blank'>
+                  facebook
+                </a>
+              </li>
+              <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+
+              <li className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] duration-150 ease-in-out'>
+                <a href='https://www.youtube.com/c/GoIT' target='_blank'>
+                  youtube
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </Container>

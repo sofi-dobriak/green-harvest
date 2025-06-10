@@ -42,100 +42,94 @@ const OrderForm = () => {
   };
 
   return (
-    <>
-      <Formik
-        initialValues={initialValues}
-        onSubmit={handleSubmit}
-        validationSchema={feedbackSchema}
-      >
-        {({ errors, touched, values, setFieldValue, dirty }) => {
-          const handleFieldChange = (
-            e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-          ) => {
-            const { name, value } = e.target;
-            setFieldValue(name, value);
+    <Formik initialValues={initialValues} onSubmit={handleSubmit} validationSchema={feedbackSchema}>
+      {({ errors, touched, values, setFieldValue, dirty }) => {
+        const handleFieldChange = (
+          e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+        ) => {
+          const { name, value } = e.target;
+          setFieldValue(name, value);
 
-            const updateValues = { ...values, [name]: value };
-            saveToLS(FORM_LS_KEY, updateValues);
-          };
+          const updateValues = { ...values, [name]: value };
+          saveToLS(FORM_LS_KEY, updateValues);
+        };
 
-          return (
-            <Form>
-              <div className='relative'>
-                <Field
-                  onChange={handleFieldChange}
-                  name='username'
-                  placeholder='Full Name'
-                  className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                    'border-[#e74a3b]': errors.username && touched.username,
-                    'border-[#3cbc81]': !errors.username && touched.username,
-                    'border-[#858585]': !touched.username,
-                  })}
-                />
-                <ErrorMessage
-                  name='name'
-                  component='span'
-                  className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
-                />
-              </div>
+        return (
+          <Form>
+            <div className='relative'>
+              <Field
+                onChange={handleFieldChange}
+                name='username'
+                placeholder='Full Name'
+                className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
+                  'border-[#e74a3b]': errors.username && touched.username,
+                  'border-[#3cbc81]': !errors.username && touched.username,
+                  'border-[#858585]': !touched.username,
+                })}
+              />
+              <ErrorMessage
+                name='name'
+                component='span'
+                className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
+              />
+            </div>
 
-              <div className='relative'>
-                <Field
-                  onChange={handleFieldChange}
-                  name='email'
-                  placeholder='Email'
-                  className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                    'border-[#e74a3b]': errors.email && touched.email,
-                    'border-[#3cbc81]': !errors.email && touched.email,
-                    'border-[#858585]': !touched.email,
-                  })}
-                />
-                <ErrorMessage
-                  name='email'
-                  component='span'
-                  className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
-                />
-              </div>
+            <div className='relative'>
+              <Field
+                onChange={handleFieldChange}
+                name='email'
+                placeholder='Email'
+                className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
+                  'border-[#e74a3b]': errors.email && touched.email,
+                  'border-[#3cbc81]': !errors.email && touched.email,
+                  'border-[#858585]': !touched.email,
+                })}
+              />
+              <ErrorMessage
+                name='email'
+                component='span'
+                className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
+              />
+            </div>
 
-              <div className='relative'>
-                <Field
-                  onChange={handleFieldChange}
-                  name='comment'
-                  as='textarea'
-                  placeholder='Comment'
-                  className={clsx(
-                    'border rounded-[15px] py-3.5 px-4  mb-8 w-full resize-none outline-none',
-                    {
-                      'border-[#e74a3b]': errors.comment && touched.comment,
-                      'border-[#3cbc81]': !errors.comment && touched.comment,
-                      'border-[#858585]': !touched.comment,
-                    }
-                  )}
-                />
-                <ErrorMessage
-                  name='comment'
-                  component='span'
-                  className='absolute bottom-[16px] left-[10px] text-[#e74a3b] text-sm'
-                />
-              </div>
-
-              <button
-                disabled={!dirty}
-                type='submit'
+            <div className='relative'>
+              <Field
+                onChange={handleFieldChange}
+                name='comment'
+                as='textarea'
+                placeholder='Comment'
                 className={clsx(
-                  'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-150 ease-in-out',
-                  dirty
-                    ? ' cursor-pointer bg-[#7a3145] hover:text-[#7a3145] hover:bg-[#d4bfc4] focus:bg-[#fbfbfb] focus:text-[#7a3145] focus:border-[#7a3145]'
-                    : 'cursor-not-allowed border-none bg-[#858585] text-[#fbfbfb] '
+                  'border rounded-[15px] py-3.5 px-4  mb-8 w-full resize-none outline-none',
+                  {
+                    'border-[#e74a3b]': errors.comment && touched.comment,
+                    'border-[#3cbc81]': !errors.comment && touched.comment,
+                    'border-[#858585]': !touched.comment,
+                  }
                 )}
-              >
-                Send
-              </button>
-            </Form>
-          );
-        }}
-      </Formik>
-    </>
+              />
+              <ErrorMessage
+                name='comment'
+                component='span'
+                className='absolute bottom-[16px] left-[10px] text-[#e74a3b] text-sm'
+              />
+            </div>
+
+            <button
+              disabled={!dirty}
+              type='submit'
+              className={clsx(
+                'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-150 ease-in-out',
+                dirty
+                  ? ' cursor-pointer bg-[#7a3145] hover:text-[#7a3145] hover:bg-[#d4bfc4] focus:bg-[#fbfbfb] focus:text-[#7a3145] focus:border-[#7a3145]'
+                  : 'cursor-not-allowed border-none bg-[#858585] text-[#fbfbfb]'
+              )}
+            >
+              Send
+            </button>
+          </Form>
+        );
+      }}
+    </Formik>
   );
 };
 
