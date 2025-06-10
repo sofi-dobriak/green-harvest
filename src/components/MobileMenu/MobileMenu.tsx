@@ -24,7 +24,7 @@ const MobileMenu = () => {
     <div
       onClick={() => closeMenu()}
       className={clsx(
-        'bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999 transition-all duration-300 ease-in-out',
+        'bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999 duration-150 ease-in-out',
         isOpen
           ? 'translate-x-0 opacity-100 visible pointer-events-auto'
           : '-translate-x-full opacity-0 invisible pointer-events-none'
@@ -42,7 +42,7 @@ const MobileMenu = () => {
             <svg
               width={isMobile ? 32 : 40}
               height={isMobile ? 32 : 40}
-              className='stroke-[#fbfbfb] stroke-2 group-hover:stroke-[#7a3145] group-focus:stroke-[#7a3145] duration-300 ease-in-out absolute top-5 right-5'
+              className='stroke-[#fbfbfb] stroke-2 group-hover:stroke-[#7a3145] group-focus:stroke-[#7a3145] duration-150 ease-in-out absolute top-5 right-5'
             >
               (
               <path
@@ -61,7 +61,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 How It Works
               </a>
@@ -69,7 +69,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 Vegetables
               </a>
@@ -77,7 +77,7 @@ const MobileMenu = () => {
             <li>
               <a
                 href='#'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-300 ease-in-out cursor-pointer'
+                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
               >
                 Reviews
               </a>
@@ -86,7 +86,7 @@ const MobileMenu = () => {
 
           <button
             type='button'
-            className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] text-[14px] md:text-[16px] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-300 ease-in-out'
+            className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] text-[14px] md:text-[16px] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
           >
             Shop now
           </button>

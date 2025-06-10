@@ -7,7 +7,7 @@ import { FORM_LS_KEY } from '../../constants/constants';
 const regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 const feedbackSchema = Yup.object().shape({
-  name: Yup.string()
+  username: Yup.string()
     .min(2, 'Minimum 2 characters')
     .max(16, 'Maximum 16 characters')
     .required('Required'),
@@ -16,19 +16,19 @@ const feedbackSchema = Yup.object().shape({
 });
 
 interface InitialValues {
-  name: string;
+  username: string;
   email: string;
   comment: string;
 }
 
 export interface FormValues {
-  name: string;
+  username: string;
   email: string;
   comment: string;
 }
 
 const initialValues: InitialValues = loadFromLS(FORM_LS_KEY) || {
-  name: '',
+  username: '',
   email: '',
   comment: '',
 };
@@ -64,12 +64,12 @@ const OrderForm = () => {
               <div className='relative'>
                 <Field
                   onChange={handleFieldChange}
-                  name='name'
+                  name='username'
                   placeholder='Full Name'
                   className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                    'border-[#e74a3b]': errors.name && touched.name,
-                    'border-[#3cbc81]': !errors.name && touched.name,
-                    'border-[#858585]': !touched.name,
+                    'border-[#e74a3b]': errors.username && touched.username,
+                    'border-[#3cbc81]': !errors.username && touched.username,
+                    'border-[#858585]': !touched.username,
                   })}
                 />
                 <ErrorMessage
@@ -85,9 +85,9 @@ const OrderForm = () => {
                   name='email'
                   placeholder='Email'
                   className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                    'border-[#e74a3b]': errors.name && touched.name,
-                    'border-[#3cbc81]': !errors.name && touched.name,
-                    'border-[#858585]': !touched.name,
+                    'border-[#e74a3b]': errors.email && touched.email,
+                    'border-[#3cbc81]': !errors.email && touched.email,
+                    'border-[#858585]': !touched.email,
                   })}
                 />
                 <ErrorMessage
@@ -104,11 +104,11 @@ const OrderForm = () => {
                   as='textarea'
                   placeholder='Comment'
                   className={clsx(
-                    'border border-[#858585] rounded-[15px] py-3.5 px-4  mb-8 w-full resize-none outline-none',
+                    'border rounded-[15px] py-3.5 px-4  mb-8 w-full resize-none outline-none',
                     {
-                      'border-[#e74a3b]': errors.name && touched.name,
-                      'border-[#3cbc81]': !errors.name && touched.name,
-                      'border-[#858585]': !touched.name,
+                      'border-[#e74a3b]': errors.comment && touched.comment,
+                      'border-[#3cbc81]': !errors.comment && touched.comment,
+                      'border-[#858585]': !touched.comment,
                     }
                   )}
                 />
@@ -123,10 +123,10 @@ const OrderForm = () => {
                 disabled={!dirty}
                 type='submit'
                 className={clsx(
-                  'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-300 ease-in-out',
+                  'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-150 ease-in-out',
                   dirty
                     ? ' cursor-pointer bg-[#7a3145] hover:text-[#7a3145] hover:bg-[#d4bfc4] focus:bg-[#fbfbfb] focus:text-[#7a3145] focus:border-[#7a3145]'
-                    : 'cursor-not-allowed border-none bg-gray-500 text-[#fbfbfb] '
+                    : 'cursor-not-allowed border-none bg-[#858585] text-[#fbfbfb] '
                 )}
               >
                 Send

@@ -70,7 +70,7 @@ const HowItWorks = () => {
           </p>
 
           <ol>
-            <li className='py-3 px-5 bg-[#fbfbfb] border-[3px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+            <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-150ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
               <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
                 <p className='font-semibold text-[18px] text-[#fbfbfb]'>1</p>
               </div>
@@ -81,7 +81,7 @@ const HowItWorks = () => {
               </p>
             </li>
 
-            <li className='py-3 px-5 bg-[#fbfbfb] border-[3px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+            <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-150ease-in-out  rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
               <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
                 <p className='font-semibold text-[18px] text-[#fbfbfb]'>2</p>
               </div>
@@ -91,7 +91,7 @@ const HowItWorks = () => {
               </p>
             </li>
 
-            <li className='py-3 px-5 bg-[#fbfbfb] border-[3px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-300 ease-in-out rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
+            <li className='py-3 px-5 bg-[#fbfbfb] border-[2px] border-[#576f35] hover:border-[#7a3145] focus:border-[#7a3145] duration-150ease-in-out rounded-2xl mb-5 md:mb-6 flex items-center gap-6'>
               <div className='flex items-center justify-center bg-[#7a3145] rounded-full aspect-square w-[52px] h-[52px] border-[5px] border-[#d4bfc4]'>
                 <p className='font-semibold text-[18px] text-[#fbfbfb]'>3</p>
               </div>
