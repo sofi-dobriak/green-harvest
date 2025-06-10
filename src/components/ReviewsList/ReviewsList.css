@@ -7,6 +7,13 @@
     margin: 0 4px;
   }
 
+  @media (max-width:425px) {
+    .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
   .swiper-pagination-bullet-active {
     background-color: #576f35;
   }
