@@ -1,17 +1,19 @@
 import { useMediaQuery } from 'react-responsive';
-import useModalStore from '../../zustand/mobile';
+import UseMobileMenuStore from '../../zustand/mobileMenu';
+import UseModalFormStore from '../../zustand/modalOrderForm';
 
 const Navigation = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 375 });
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
 
-  const { openMenu } = useModalStore();
+  const { openMobileMenu } = UseMobileMenuStore();
+  const { openModalForm } = UseModalFormStore();
 
   return (
     <>
       {!isDesktop && (
         <button
-          onClick={() => openMenu()}
+          onClick={() => openMobileMenu()}
           className='flex items-center justify-center cursor-pointer group focus:outline-none'
         >
           <svg
@@ -59,6 +61,7 @@ const Navigation = () => {
           </ul>
 
           <button
+            onClick={() => openModalForm()}
             type='button'
             className='flex items-center justify-center text-[#fbfbfb] text-[16px] bg-[#7a3145] rounded-4xl py-3 px-6 cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
           >

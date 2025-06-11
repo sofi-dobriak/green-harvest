@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import { ErrorMessage, Field, Form, Formik, type FormikHelpers } from 'formik';
 import { loadFromLS, saveToLS } from '../../utils/localStorage';
 import { FORM_LS_KEY } from '../../constants/constants';
+import useModalFormStore from '../../zustand/modalOrderForm';
 
 const regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -34,11 +35,14 @@ const initialValues: InitialValues = loadFromLS(FORM_LS_KEY) || {
 };
 
 const OrderForm = () => {
+  const { closeModalForm } = useModalFormStore();
   const handleSubmit = (values: FormValues, action: FormikHelpers<FormValues>) => {
     console.log('Form submitted:', values);
 
     localStorage.removeItem(FORM_LS_KEY);
     action.resetForm();
+
+    closeModalForm();
   };
 
   return (
@@ -58,14 +62,17 @@ const OrderForm = () => {
           <Form>
             <div className='relative'>
               <Field
-                onChange={handleFieldChange}
                 name='username'
+                onChange={handleFieldChange}
                 placeholder='Full Name'
-                className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                  'border-[#e74a3b]': errors.username && touched.username,
-                  'border-[#3cbc81]': !errors.username && touched.username,
-                  'border-[#858585]': !touched.username,
-                })}
+                className={clsx(
+                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[#7a3145] focus:border-[#7a3145]',
+                  {
+                    'border-[#e74a3b]': touched.username && errors.username,
+                    'border-[#3cbc81]': touched.username && !errors.username,
+                    'border-[#858585]': !touched.username,
+                  }
+                )}
               />
               <ErrorMessage
                 name='username'
@@ -79,11 +86,14 @@ const OrderForm = () => {
                 onChange={handleFieldChange}
                 name='email'
                 placeholder='Email'
-                className={clsx('border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none', {
-                  'border-[#e74a3b]': errors.email && touched.email,
-                  'border-[#3cbc81]': !errors.email && touched.email,
-                  'border-[#858585]': !touched.email,
-                })}
+                className={clsx(
+                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[#7a3145] focus:border-[#7a3145]',
+                  {
+                    'border-[#e74a3b]': touched.email && errors.email,
+                    'border-[#3cbc81]': touched.email && !errors.email,
+                    'border-[#858585]': !touched.email,
+                  }
+                )}
               />
               <ErrorMessage
                 name='email'
@@ -99,7 +109,7 @@ const OrderForm = () => {
                 as='textarea'
                 placeholder='Comment'
                 className={clsx(
-                  'border rounded-[15px] py-3.5 px-4  mb-8 w-full resize-none outline-none',
+                  'border rounded-[15px] py-3.5 px-4 mb-8 w-full resize-none outline-none hover:border-[#7a3145] focus:border-[#7a3145]',
                   {
                     'border-[#e74a3b]': errors.comment && touched.comment,
                     'border-[#3cbc81]': !errors.comment && touched.comment,

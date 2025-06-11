@@ -44,7 +44,7 @@ const ReviewsList = () => {
             <SwiperSlide
               key={index + 1}
               tag='li'
-              className='border border-[#d4bfc4] rounded-3xl bg-[#fbfbfb] py-5 px-4 md:px-5 min-h-[250px]'
+              className='border border-[#d4bfc4] rounded-3xl bg-[#fbfbfb] py-5 px-4 md:px-5 min-h-[270px]'
             >
               <ReviewCart {...review} />
             </SwiperSlide>

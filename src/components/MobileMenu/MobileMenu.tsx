@@ -1,31 +1,38 @@
 import { useMediaQuery } from 'react-responsive';
-import useModalStore from '../../zustand/mobile';
 import clsx from 'clsx';
 import { useEffect } from 'react';
+import UseMobileMenuStore from '../../zustand/mobileMenu';
+import useModalFormStore from '../../zustand/modalOrderForm';
 
 const MobileMenu = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 767 });
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
 
-  const { isOpen, closeMenu } = useModalStore();
+  const { isMobileOpen, closeMobileMenu } = UseMobileMenuStore();
+  const { openModalForm } = useModalFormStore();
 
   useEffect(() => {
     const handleKeyPress = (event: KeyboardEvent) => {
       if (event.key === 'Escape') {
-        closeMenu();
+        closeMobileMenu();
       }
     };
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [closeMenu]);
+  }, [closeMobileMenu]);
+
+  const handleOpenModal = () => {
+    closeMobileMenu();
+    openModalForm();
+  };
 
   return (
     <div
-      onClick={() => closeMenu()}
+      onClick={() => closeMobileMenu()}
       className={clsx(
         'bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999 duration-150 ease-in-out',
-        isOpen
+        isMobileOpen
           ? 'translate-x-0 opacity-100 visible pointer-events-auto'
           : '-translate-x-full opacity-0 invisible pointer-events-none'
       )}
@@ -36,7 +43,7 @@ const MobileMenu = () => {
       >
         {!isDesktop && (
           <button
-            onClick={() => closeMenu()}
+            onClick={() => closeMobileMenu()}
             className='flex items-center justify-center cursor-pointer group focus:outline-none'
           >
             <svg
@@ -58,7 +65,7 @@ const MobileMenu = () => {
 
         <div className='flex flex-col justify-between'>
           <ul className='flex flex-col gap-5 items-center m-auto'>
-            <li onClick={closeMenu}>
+            <li onClick={closeMobileMenu}>
               <a
                 href='#works'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
@@ -66,7 +73,7 @@ const MobileMenu = () => {
                 How It Works
               </a>
             </li>
-            <li onClick={closeMenu}>
+            <li onClick={closeMobileMenu}>
               <a
                 href='#vegetables'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
@@ -74,7 +81,7 @@ const MobileMenu = () => {
                 Vegetables
               </a>
             </li>
-            <li onClick={closeMenu}>
+            <li onClick={closeMobileMenu}>
               <a
                 href='#reviews'
                 className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
@@ -85,6 +92,7 @@ const MobileMenu = () => {
           </ul>
 
           <button
+            onClick={handleOpenModal}
             type='button'
             className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] text-[14px] md:text-[16px] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
           >

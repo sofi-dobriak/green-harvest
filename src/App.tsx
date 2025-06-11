@@ -9,6 +9,8 @@ import VegetableList from './components/VegetableList/VegetableList';
 import ReviewsList from './components/ReviewsList/ReviewsList';
 import YourOrder from './components/YourOrder/YourOrder';
 import Footer from './components/Footer/Footer';
+import Modal from './components/Modal/Modal';
+import BackToTop from './components/BackToTop/BackToTop';
 
 function App() {
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
@@ -29,6 +31,8 @@ function App() {
       <Footer />
 
       {!isDesktop && <MobileMenu />}
+      <Modal />
+      <BackToTop />
     </>
   );
 }
