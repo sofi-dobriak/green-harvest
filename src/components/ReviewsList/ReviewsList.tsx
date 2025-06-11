@@ -25,7 +25,7 @@ const ReviewsList = () => {
         </p>
 
         <Swiper
-          spaceBetween={24}
+          spaceBetween={20}
           slidesPerView={1}
           loop={true}
           pagination={{
@@ -44,7 +44,7 @@ const ReviewsList = () => {
             <SwiperSlide
               key={index + 1}
               tag='li'
-              className='border border-[#d4bfc4] rounded-3xl bg-[#fbfbfb] py-5 px-4 md:px-5 min-h-[270px]'
+              className='border border-[#d4bfc4] rounded-3xl bg-[#fbfbfb] py-5 px-4 md:px-5 min-h-[250px]'
             >
               <ReviewCart {...review} />
             </SwiperSlide>

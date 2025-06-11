@@ -15,9 +15,9 @@ const VegetableCart = ({
   description,
 }: Vegetable) => {
   return (
-    <li className='cart w-full max-w-[340px] md:min-w-[280px] min-h-[380px]'>
+    <li className='cart w-full max-w-[280px]  sm:max-w-[340px] md:min-w-[280px] min-h-[340px] sm:min-h-[380px]'>
       <div className='content'>
-        <div className='front py-8 px-4 sm:px-6 md:px-7.5 xl:px-8'>
+        <div className='front py-8 px-4  sm:px-6 md:px-7.5 xl:px-8'>
           <h2 className='font-semibold text-[28px] md:text-[32px] uppercase mb-3 text-[#7a3145]'>
             {title}
           </h2>
