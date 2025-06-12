@@ -18,6 +18,7 @@ const HowItWorks = () => {
   return (
     <section className='xl:flex xl:mx-auto xl:max-w-[1280px]' id='works'>
       <h2 className='visually-hidden'>How It Works</h2>
+
       <div className='bg-[#7a3145] w-full py-10 px-5 md:py-25 md:px-16 xl:p-25 xl:max-w-[640px]'>
         <picture>
           <source

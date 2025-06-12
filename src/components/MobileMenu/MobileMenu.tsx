@@ -94,6 +94,7 @@ const MobileMenu = () => {
           <button
             onClick={handleOpenModal}
             type='button'
+            aria-label='Button to open a modal window with an order form'
             className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] text-[14px] md:text-[16px] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
           >
             Shop now

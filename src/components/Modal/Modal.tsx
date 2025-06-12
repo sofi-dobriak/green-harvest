@@ -34,6 +34,7 @@ const Modal = () => {
       >
         <button
           onClick={() => closeModalForm()}
+          aria-label='Button to open the order form submission'
           className='absolute top-3 md:top-3 xl:top-5 right-4  md:right-4 xl:right-6 flex items-center justify-center group duration-150 ease-in-out cursor-pointer'
         >
           <IoMdClose className='text-[24px] text-[#141414] group-hover:text-[#7a3145] group-focus:text-[#7a3145]' />

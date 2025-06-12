@@ -71,7 +71,9 @@ const OrderCart = () => {
             instagram
           </a>
         </li>
-        <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+        <li>
+          <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+        </li>
 
         <li>
           <a
@@ -82,7 +84,9 @@ const OrderCart = () => {
             facebook
           </a>
         </li>
-        <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+        <li>
+          <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+        </li>
 
         <li>
           <a

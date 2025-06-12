@@ -40,6 +40,8 @@ const OrderForm = () => {
   const { openMessage } = useInfoMessageStore();
 
   const handleSubmit = (values: FormValues, action: FormikHelpers<FormValues>) => {
+    console.log('Form submitted:', values);
+
     localStorage.removeItem(FORM_LS_KEY);
     action.resetForm();
 
@@ -129,6 +131,7 @@ const OrderForm = () => {
             <button
               disabled={!dirty}
               type='submit'
+              aria-label='Button for submitting the order form'
               className={clsx(
                 'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-150 ease-in-out',
                 dirty

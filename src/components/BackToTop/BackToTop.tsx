@@ -24,6 +24,7 @@ const BackToTop = () => {
   return (
     <button
       onClick={handleScroll}
+      aria-label='Button to return to the top of the page'
       className={clsx(
         'fixed right-5 xl:right-8 bottom-5  flex items-center justify-center bg-[rgba(20,20,20,0.2)] hover:bg-[#28282870] backdrop-blur-[4px] rounded-[8px] p-2.5 group cursor-pointer duration-150 ease-in-out border-[#7a3145] z-997',
         isScroll ? 'opacity-full translate-y-[-10px]' : 'opacity-0 translate-y-0'

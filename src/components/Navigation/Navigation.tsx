@@ -63,6 +63,7 @@ const Navigation = () => {
           <button
             onClick={() => openModalForm()}
             type='button'
+            aria-label='Button to open a modal window with an order form'
             className='flex items-center justify-center text-[#fbfbfb] text-[16px] bg-[#7a3145] rounded-4xl py-3 px-6 cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
           >
             Shop now
