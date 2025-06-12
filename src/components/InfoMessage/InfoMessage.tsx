@@ -8,6 +8,7 @@ const InfoMessage = () => {
 
   useEffect(() => {
     if (!isMessageVisible) return;
+
     const timer = setTimeout(() => {
       closeMessage();
     }, 2500);
@@ -17,6 +18,7 @@ const InfoMessage = () => {
 
   return (
     <div
+      onClick={() => closeMessage()}
       className={clsx(
         'flex items-center justify-center  p-4 rounded-[8px] gap-2 bg-[#7a3145] max-w-[320px] fixed z-1000 top-5 duration-150',
         isMessageVisible

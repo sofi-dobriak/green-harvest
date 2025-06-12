@@ -40,8 +40,6 @@ const OrderForm = () => {
   const { openMessage } = useInfoMessageStore();
 
   const handleSubmit = (values: FormValues, action: FormikHelpers<FormValues>) => {
-    console.log('Form submitted:', values);
-
     localStorage.removeItem(FORM_LS_KEY);
     action.resetForm();
 
