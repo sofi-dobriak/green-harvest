@@ -4,6 +4,7 @@ import { ErrorMessage, Field, Form, Formik, type FormikHelpers } from 'formik';
 import { loadFromLS, saveToLS } from '../../utils/localStorage';
 import { FORM_LS_KEY } from '../../constants/constants';
 import useModalFormStore from '../../zustand/modalOrderForm';
+import { useInfoMessageStore } from '../../zustand/infoMessage';
 
 const regExp = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
@@ -36,6 +37,8 @@ const initialValues: InitialValues = loadFromLS(FORM_LS_KEY) || {
 
 const OrderForm = () => {
   const { closeModalForm } = useModalFormStore();
+  const { openMessage } = useInfoMessageStore();
+
   const handleSubmit = (values: FormValues, action: FormikHelpers<FormValues>) => {
     console.log('Form submitted:', values);
 
@@ -43,6 +46,7 @@ const OrderForm = () => {
     action.resetForm();
 
     closeModalForm();
+    openMessage();
   };
 
   return (

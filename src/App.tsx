@@ -11,6 +11,7 @@ import YourOrder from './components/YourOrder/YourOrder';
 import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal';
 import BackToTop from './components/BackToTop/BackToTop';
+import InfoMessage from './components/InfoMessage/InfoMessage';
 
 function App() {
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
@@ -33,6 +34,7 @@ function App() {
       {!isDesktop && <MobileMenu />}
       <Modal />
       <BackToTop />
+      <InfoMessage />
     </>
   );
 }
