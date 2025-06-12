@@ -44,6 +44,7 @@ const MobileMenu = () => {
         {!isDesktop && (
           <button
             onClick={() => closeMobileMenu()}
+            aria-label='Button to open mobile menu'
             className='flex items-center justify-center cursor-pointer group focus:outline-none'
           >
             <svg
