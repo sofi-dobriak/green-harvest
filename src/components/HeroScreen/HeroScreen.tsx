@@ -18,11 +18,11 @@ const HeroScreen = () => {
   return (
     <section className='xl:flex xl:items-center xl:justify-center'>
       <Container>
-        <h1 className='uppercase font-semibold text-[44px] md:text-[70px] leading-none md:max-w-[704px] xl:max-w-[502px] text-[#fbfbfb] mb-5 md:mb-6 xl:mb-32 pt-[100px] px-5 md:px-8 xl:px-0'>
+        <h1 className='uppercase font-semibold text-[44px] md:text-[70px] leading-none md:max-w-[704px] xl:max-w-[502px] text-[var(--light-text-color)] mb-5 md:mb-6 xl:mb-32 pt-[100px] px-5 md:px-8 xl:px-0'>
           organic vegetables to your diet today!
         </h1>
 
-        <p className='font-medium text-sm md:text-base leading-[1.43] md:leading-[1.25] text-[#fbfbfb]  md:max-w-[702px] xl:max-w-[450px] mb-10 md:mb-13 px-5 md:px-8  xl:px-0'>
+        <p className='font-medium text-sm md:text-base leading-[1.43] md:leading-[1.25] text-[var(--light-text-color)]  md:max-w-[702px] xl:max-w-[450px] mb-10 md:mb-13 px-5 md:px-8  xl:px-0'>
           Our expertly curated vegetable baskets are made with the freshest, highest quality
           vegetables available. Fresh Harvest Box has got you covered. Fresh, high-quality
           vegetables in expertly curated vegetable baskets delivered to you.

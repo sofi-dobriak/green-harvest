@@ -15,7 +15,7 @@ import deskSocialWEBP2x from '/images/deskSocial2x.webp';
 
 const OrderCart = () => {
   return (
-    <div className='bg-[#7a3145] rounded-[30px] py-10 px-5 md:py-13 md:px-13 xl:px-12'>
+    <div className='bg-[var(--secondary-bg-section)] rounded-[30px] py-10 px-5 md:py-13 md:px-13 xl:px-12'>
       <picture>
         <source
           media='(min-width:1280px)'
@@ -57,7 +57,7 @@ const OrderCart = () => {
         />
       </picture>
 
-      <p className='font-bold text-[14px] md:text-[16px] leading-[1.43] md:leading-[1.25] text-[#d4bfc4] mb-4'>
+      <p className='font-bold text-[14px] md:text-[16px] leading-[1.43] md:leading-[1.25] text-[var(--accent-text-color)] mb-4'>
         Follow us on our social networks:
       </p>
 
@@ -66,33 +66,37 @@ const OrderCart = () => {
           <a
             href='https://www.instagram.com/goitclub/'
             target='_blank'
-            className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] focus:text-[#7a3145] focus:bg-[#fbfbfb]'
+            className='text-[var(--light-text-color)] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[var(--hover-text-color)] hover:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)]'
           >
             instagram
           </a>
         </li>
         <li>
-          <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+          <p className='text-[var(--light-text-color)] font-semibold text-[18px] leading-[1.1]'>
+            /
+          </p>
         </li>
 
         <li>
           <a
             href='https://www.facebook.com/goITclub/'
             target='_blank'
-            className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] focus:text-[#7a3145] focus:bg-[#fbfbfb]'
+            className='text-[var(--light-text-color)] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[var(--hover-text-color)] hover:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)]'
           >
             facebook
           </a>
         </li>
         <li>
-          <p className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1]'>/</p>
+          <p className='text-[var(--light-text-color)] font-semibold text-[18px] leading-[1.1]'>
+            /
+          </p>
         </li>
 
         <li>
           <a
             href='https://www.youtube.com/c/GoIT'
             target='_blank'
-            className='text-[#fbfbfb] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[#7a3145] hover:bg-[#fbfbfb] focus:text-[#7a3145] focus:bg-[#fbfbfb]'
+            className='text-[var(--light-text-color)] font-semibold text-[18px] leading-[1.1] uppercase hover:text-[var(--hover-text-color)] hover:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)]'
           >
             youtube
           </a>

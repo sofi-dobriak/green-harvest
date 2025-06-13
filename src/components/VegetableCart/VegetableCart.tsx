@@ -18,10 +18,10 @@ const VegetableCart = ({
     <li className='cart w-full max-w-[340px] md:min-w-[280px] min-h-[380px]'>
       <div className='content'>
         <div className='front py-8 px-6 md:px-7.5 xl:px-8'>
-          <h2 className='font-semibold text-[28px] md:text-[32px] uppercase mb-3 text-[#7a3145]'>
+          <h2 className='font-semibold text-[28px] md:text-[32px] uppercase mb-3 text-[var(--hover-text-color)]'>
             {title}
           </h2>
-          <p className='font-medium text-[14px] text-[#141414] leading-[1.43] md:text-[16px] md:leading-[1.25]'>
+          <p className='font-medium text-[14px] text-[var(--dart-text-color)] leading-[1.43] md:text-[16px] md:leading-[1.25]'>
             {mass}
           </p>
 

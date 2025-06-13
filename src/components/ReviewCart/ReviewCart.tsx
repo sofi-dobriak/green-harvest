@@ -21,10 +21,10 @@ const ReviewCart = ({ name, review, imagePNG, imagePNG2x, imageWEBP, imageWEBP2x
         />
       </picture>
 
-      <h3 className='font-semibold text-[18px] leading-[1.1] uppercase text-center text-[#141414] mb-2'>
+      <h3 className='font-semibold text-[18px] leading-[1.1] uppercase text-center text-[var(--dart-text-color)] mb-2'>
         {name}
       </h3>
-      <p className=' text-[14px] md:text-[16px] leading-[1.43] md:leading-[1.25] text-center text-[#858585]'>
+      <p className=' text-[14px] md:text-[16px] leading-[1.43] md:leading-[1.25] text-center text-[var(--form-base-border)]'>
         {review}
       </p>
     </>

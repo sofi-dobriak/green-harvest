@@ -70,18 +70,18 @@ const OrderForm = () => {
                 onChange={handleFieldChange}
                 placeholder='Full Name'
                 className={clsx(
-                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[#7a3145] focus:border-[#7a3145]',
+                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[var(--hover-border-color)] focus:border-[var(--hover-border-color)]',
                   {
-                    'border-[#e74a3b]': touched.username && errors.username,
-                    'border-[#3cbc81]': touched.username && !errors.username,
-                    'border-[#858585]': !touched.username,
+                    'border-[var(--form-invalid-border)]': touched.username && errors.username,
+                    'border-[var(--form-valid-border)]': touched.username && !errors.username,
+                    'border-[var(--form-base-border)]': !touched.username,
                   }
                 )}
               />
               <ErrorMessage
                 name='username'
                 component='span'
-                className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
+                className='absolute bottom-[6px] left-[10px] text-[var(--error-text-color)] text-sm'
               />
             </div>
 
@@ -91,18 +91,18 @@ const OrderForm = () => {
                 name='email'
                 placeholder='Email'
                 className={clsx(
-                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[#7a3145] focus:border-[#7a3145]',
+                  'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[var(--hover-border-color)] focus:border-[var(--hover-border-color)]',
                   {
-                    'border-[#e74a3b]': touched.email && errors.email,
-                    'border-[#3cbc81]': touched.email && !errors.email,
-                    'border-[#858585]': !touched.email,
+                    'border-[var(--form-invalid-border)]': touched.username && errors.username,
+                    'border-[var(--form-valid-border)]': touched.username && !errors.username,
+                    'border-[var(--form-base-border)]': !touched.username,
                   }
                 )}
               />
               <ErrorMessage
                 name='email'
                 component='span'
-                className='absolute bottom-[6px] left-[10px] text-[#e74a3b] text-sm'
+                className='absolute bottom-[6px] left-[10px] text-[var(--error-text-color)] text-sm'
               />
             </div>
 
@@ -113,18 +113,18 @@ const OrderForm = () => {
                 as='textarea'
                 placeholder='Comment'
                 className={clsx(
-                  'border rounded-[15px] py-3.5 px-4 mb-8 w-full resize-none outline-none hover:border-[#7a3145] focus:border-[#7a3145]',
+                  'border rounded-[15px] py-3.5 px-4 mb-8 w-full resize-none outline-none hover:border-[var(--hover-border-color)] focus:border-[var(--hover-border-color)]',
                   {
-                    'border-[#e74a3b]': errors.comment && touched.comment,
-                    'border-[#3cbc81]': !errors.comment && touched.comment,
-                    'border-[#858585]': !touched.comment,
+                    'border-[var(--form-invalid-border)]': touched.username && errors.username,
+                    'border-[var(--form-valid-border)]': touched.username && !errors.username,
+                    'border-[var(--form-base-border)]': !touched.username,
                   }
                 )}
               />
               <ErrorMessage
                 name='comment'
                 component='span'
-                className='absolute bottom-[16px] left-[10px] text-[#e74a3b] text-sm'
+                className='absolute bottom-[16px] left-[10px] text-[var(--error-text-color)] text-sm'
               />
             </div>
 
@@ -133,10 +133,10 @@ const OrderForm = () => {
               type='submit'
               aria-label='Button for submitting the order form'
               className={clsx(
-                'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[#fbfbfb]   duration-150 ease-in-out',
+                'flex items-center justify-center rounded-[30px] border w-full h-[52px] font-semibold text-[18px] leading-[1.1] uppercase text-[var(--light-text-color)]   duration-150 ease-in-out',
                 dirty
-                  ? ' cursor-pointer bg-[#7a3145] hover:text-[#7a3145] hover:bg-[#d4bfc4] focus:bg-[#fbfbfb] focus:text-[#7a3145] focus:border-[#7a3145]'
-                  : 'cursor-not-allowed border-none bg-[#858585] text-[#fbfbfb]'
+                  ? ' cursor-pointer bg-[var(--secondary-bg-section)] hover:text-[var(--hover-text-color)] hover:bg-[var(--hover-button-bg)] focus:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)] focus:border-[var(--hover-border-color)]'
+                  : 'cursor-not-allowed border-none bg-[var(--form-base-border)] text-[var(--light-text-color)]'
               )}
             >
               Send

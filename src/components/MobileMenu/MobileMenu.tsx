@@ -31,7 +31,7 @@ const MobileMenu = () => {
     <div
       onClick={() => closeMobileMenu()}
       className={clsx(
-        'bg-[rgba(20,20,20,0.4)] fixed inset-0  flex items-center justify-end z-999 duration-150 ease-in-out',
+        'bg-[var(--mobile-backdrop-bg)] fixed inset-0 flex items-center justify-end z-999 duration-150 ease-in-out',
         isMobileOpen
           ? 'translate-x-0 opacity-100 visible pointer-events-auto'
           : '-translate-x-full opacity-0 invisible pointer-events-none'
@@ -39,7 +39,7 @@ const MobileMenu = () => {
     >
       <div
         onClick={e => e.stopPropagation()}
-        className='bg-[#576f35] h-full w-full max-w-[375px] relative p-[52px] flex justify-center'
+        className='bg-[var(--background-color)] h-full w-full max-w-[375px] relative p-[52px] flex justify-center'
       >
         {!isDesktop && (
           <button
@@ -50,7 +50,7 @@ const MobileMenu = () => {
             <svg
               width={isMobile ? 32 : 40}
               height={isMobile ? 32 : 40}
-              className='stroke-[#fbfbfb] stroke-2 group-hover:stroke-[#7a3145] group-focus:stroke-[#7a3145] duration-150 ease-in-out absolute top-5 right-5'
+              className='stroke-[var(--light-text-color)] stroke-2 group-hover:stroke-[var(--hover-text-color)] group-focus:stroke-[var(--hover-text-color)] duration-150 ease-in-out absolute top-5 right-5'
             >
               (
               <path
@@ -69,7 +69,7 @@ const MobileMenu = () => {
             <li onClick={closeMobileMenu}>
               <a
                 href='#works'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
+                className='flex items-center justify-center w-[118px] border border-[var(--light-text-color)] text-[var(--light-text-color)] text-[16px] rounded-xl p-3 hover:bg-[var(--border-color)] hover:border-[var(--border-color)] hover:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)]  duration-150 ease-in-out cursor-pointer'
               >
                 How It Works
               </a>
@@ -77,7 +77,7 @@ const MobileMenu = () => {
             <li onClick={closeMobileMenu}>
               <a
                 href='#vegetables'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
+                className='flex items-center justify-center w-[118px] border border-[var(--light-text-color)] text-[var(--light-text-color)] text-[16px] rounded-xl p-3 hover:bg-[var(--border-color)] hover:border-[var(--border-color)] hover:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)]  duration-150 ease-in-out cursor-pointer'
               >
                 Vegetables
               </a>
@@ -85,7 +85,7 @@ const MobileMenu = () => {
             <li onClick={closeMobileMenu}>
               <a
                 href='#reviews'
-                className='flex items-center justify-center  w-[118px] border border-[#fbfbfb] text-[#fbfbfb] text-[16px] rounded-xl p-3 hover:bg-[#d4bfc4] hover:border-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145]  duration-150 ease-in-out cursor-pointer'
+                className='flex items-center justify-center w-[118px] border border-[var(--light-text-color)] text-[var(--light-text-color)] text-[16px] rounded-xl p-3 hover:bg-[var(--border-color)] hover:border-[var(--border-color)] hover:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)]  duration-150 ease-in-out cursor-pointer'
               >
                 Reviews
               </a>
@@ -96,7 +96,7 @@ const MobileMenu = () => {
             onClick={handleOpenModal}
             type='button'
             aria-label='Button to open a modal window with an order form'
-            className='w-full min-w-[176px] h-[52px] text-[#fbfbfb] text-[14px] md:text-[16px] bg-[#7a3145] rounded-4xl  cursor-pointer hover:bg-[#d4bfc4] hover:text-[#7a3145] focus:bg-[#fbfbfb] focus:text-[#7a3145] duration-150 ease-in-out'
+            className='w-full min-w-[176px] h-[52px] text-[var(--light-text-color)] text-[14px] md:text-[16px] bg-[var(--secondary-bg-section)] rounded-4xl  cursor-pointer hover:bg-[var(--hover-button-bg)] hover:text-[var(--hover-text-color)] focus:bg-[var(--hover-light-bg)] focus:text-[var(--hover-text-color)] duration-150 ease-in-out'
           >
             Shop now
           </button>

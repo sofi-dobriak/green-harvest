@@ -37,6 +37,27 @@
   --background-color: #576f35;
   --font-size: 14px;
   --line-height: 1.5;
+  --light-text-color: #fbfbfb;
+  --dart-text-color: #141414;
+  --back-bg-button: rgba(20, 20, 20, 0.2);
+  --secondary-bg-section: #7a3145;
+  --hover-back-bg-button: #28282870;
+  --hover-light-bg: #fbfbfb;
+  --hover-text-color: #7a3145;
+  --accent-text-color: #d4bfc4;
+  --hover-privacy-text-color: #45242d;
+  --hover-privacy-bg-color: #fbfbfb86;
+  --header-bg: #576f355c;
+  --border-color: #d4bfc4;
+  --secondary-light-text-color: #858585;
+  --mobile-backdrop-bg: rgba(20, 20, 20, 0.4);
+  --hover-button-bg: #d4bfc4;
+  --disable-button-bg: rgba(63, 63, 63, 0.56);
+  --form-base-border: #858585;
+  --form-invalid-border: #e74a3b;
+  --form-valid-border: #3cbc81;
+  --error-text-color: #e74a3b;
+  --hover-border-color: #7a3145;
 }
 
 * {
@@ -49,7 +70,6 @@ body {
   background-color: var(--background-color);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  height: 100%;
 }
 
 .visually-hidden {

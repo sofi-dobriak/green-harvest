@@ -1,5 +1,4 @@
 import { useMediaQuery } from 'react-responsive';
-import './App.css';
 import Header from './components/Header/Header';
 import MobileMenu from './components/MobileMenu/MobileMenu';
 import HeroScreen from './components/HeroScreen/HeroScreen';

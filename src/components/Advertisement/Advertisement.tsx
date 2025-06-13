@@ -11,19 +11,19 @@ const Advertisement = () => {
 
         {!isDesktop && (
           <div className='md:max-w-[700px]'>
-            <p className='vegetable-title bg-[#576f35] text-[#fbfbfb] rounded-xl font-semibold text-[48px] max-w-[320px] md:max-w-[704px] md:text-[64px] uppercase leading-[1] '>
+            <p className='vegetable-title bg-[var(--background-color)] text-[var(--light-text-color)] rounded-xl font-semibold text-[48px] max-w-[320px] md:max-w-[704px] md:text-[64px] uppercase leading-[1] '>
               Discount up to 40%!
             </p>
 
-            <p className='font-semibold text-[48px] max-w-[340px] md:max-w-[704px] md:text-[64px] uppercase text-[#141414] leading-[1]'>
+            <p className='font-semibold text-[48px] max-w-[340px] md:max-w-[704px] md:text-[64px] uppercase text-[var(--dart-text-color)] leading-[1]'>
               Taste the vitamins and keep your health
             </p>
           </div>
         )}
 
         {isDesktop && (
-          <p className='font-semibold  xl:text-[74px] uppercase text-[#141414] leading-[1] xl:max-w-[1054px]'>
-            <span className='bg-[#576f35] text-[#fbfbfb] rounded-xl font-semibold xl:text-[74px] uppercase leading-[1] xl:max-w-[800px]'>
+          <p className='font-semibold  xl:text-[74px] uppercase text-[var(--dart-text-color)] leading-[1] xl:max-w-[1054px]'>
+            <span className='bg-[var(--background-color)] text-[var(--light-text-color)] rounded-xl font-semibold xl:text-[74px] uppercase leading-[1] xl:max-w-[800px]'>
               Discount up to 40%!
             </span>
             Taste the vitamins and keep your health
