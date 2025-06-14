@@ -65,11 +65,22 @@
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
   font-size: var(--font-size);
   line-height: var(--line-height);
+}
+
+input:focus,
+textarea:focus {
+  scroll-margin-bottom: 100px;
 }
 
 .visually-hidden {
