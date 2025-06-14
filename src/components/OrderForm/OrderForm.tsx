@@ -93,9 +93,9 @@ const OrderForm = () => {
                 className={clsx(
                   'border rounded-[30px] py-3.5 px-4 mb-6 w-full outline-none duration-150 hover:border-[var(--hover-border-color)] focus:border-[var(--hover-border-color)]',
                   {
-                    'border-[var(--form-invalid-border)]': touched.username && errors.username,
-                    'border-[var(--form-valid-border)]': touched.username && !errors.username,
-                    'border-[var(--form-base-border)]': !touched.username,
+                    'border-[var(--form-invalid-border)]': touched.email && errors.email,
+                    'border-[var(--form-valid-border)]': touched.email && !errors.email,
+                    'border-[var(--form-base-border)]': !touched.email,
                   }
                 )}
               />
@@ -115,9 +115,9 @@ const OrderForm = () => {
                 className={clsx(
                   'border rounded-[15px] py-3.5 px-4 mb-8 w-full resize-none outline-none hover:border-[var(--hover-border-color)] focus:border-[var(--hover-border-color)]',
                   {
-                    'border-[var(--form-invalid-border)]': touched.username && errors.username,
-                    'border-[var(--form-valid-border)]': touched.username && !errors.username,
-                    'border-[var(--form-base-border)]': !touched.username,
+                    'border-[var(--form-invalid-border)]': touched.comment && errors.comment,
+                    'border-[var(--form-valid-border)]': touched.comment && !errors.comment,
+                    'border-[var(--form-base-border)]': !touched.comment,
                   }
                 )}
               />
