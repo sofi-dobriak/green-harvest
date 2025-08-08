@@ -27,7 +27,7 @@ Green Harvest is a responsive landing page for an organic store, created with a 
 
 ## 💻 My other projects
 
-### 🔎📷 Yacht adventures — Landing Page
+### ⛵️ Yacht adventures — Landing Page
 
 [Demo](https://yachtjet-mu.vercel.app/) |
 [Github](https://github.com/sofi-dobriak/yachtjet)
