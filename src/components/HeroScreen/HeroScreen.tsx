@@ -1,17 +1,3 @@
-import mobHeroJPG from '/images/mobHero.jpg';
-import mobHeroJPG2x from '/images/mobHero2x.jpg';
-import mobHeroWEBP from '/images/mobHero.webp';
-import mobHeroWEBP2x from '/images/mobHero2x.webp';
-
-import tabHeroJPG from '/images/tabHero.jpg';
-import tabHeroJPG2x from '/images/tabHero2x.jpg';
-import tabHeroWEBP from '/images/tabHero.webp';
-import tabHeroWEBP2x from '/images/tabHero2x.webp';
-
-import deskHeroJPG from '/images/deskHero.jpg';
-import deskHeroJPG2x from '/images/deskHero2x.jpg';
-import deskHeroWEBP from '/images/deskHero.webp';
-import deskHeroWEBP2x from '/images/deskHero2x.webp';
 import Container from '../Container/Container';
 
 const HeroScreen = () => {
@@ -33,38 +19,38 @@ const HeroScreen = () => {
         <source
           media='(min-width:768px)'
           type='image/webp'
-          srcSet={`${deskHeroWEBP} 1x, ${deskHeroWEBP2x} 2x`}
+          srcSet='/images/deskHero.webp 1x, /images/deskHero2x.webp 2x'
         />
         <source
           media='(min-width:768px) '
           type='image/jpg'
-          srcSet={`${deskHeroJPG} 1x, ${deskHeroJPG2x} 2x`}
+          srcSet='/images/deskHero.jpg 1x, /images/deskHero2x.jpg 2x'
         />
 
         <source
           media='(min-width:768px)'
           type='image/webp'
-          srcSet={`${tabHeroWEBP} 1x, ${tabHeroWEBP2x} 2x`}
+          srcSet='/images/tabHero.webp 1x, /images/tabHero2x.webp 2x'
         />
         <source
           media='(min-width:768px) '
           type='image/jpg'
-          srcSet={`${tabHeroJPG} 1x, ${tabHeroJPG2x} 2x`}
+          srcSet='/images/tabHero.jpg 1x, /images/tabHero2x.jpg 2x'
         />
 
         <source
           media='(max-width:767px)'
           type='image/webp'
-          srcSet={`${mobHeroWEBP} 1x, ${mobHeroWEBP2x} 2x`}
+          srcSet='/images/mobHero.webp 1x, /images/mobHero2x.webp 2x'
         />
         <source
           media='(max-width:767px)'
           type='image/jpg'
-          srcSet={`${mobHeroJPG} 1x, ${mobHeroJPG2x} 2x`}
+          srcSet='/images/mobHero.jpg 1x, /images/mobHero2x.jpg 2x'
         />
 
         <img
-          src={mobHeroJPG}
+          src='/images/mobHero.jpg'
           alt='Image with vegetables'
           className='object-cover block w-full max-w-[1280px] xl:max-w-[640px]  max-h-[536px] xl:max-h-[796px]'
         />

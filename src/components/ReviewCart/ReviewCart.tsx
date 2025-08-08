@@ -1,21 +1,23 @@
-import type { Review } from '../../types/review';
+import type { Review } from '../../zustand/reviews';
 
-const ReviewCart = ({ name, review, imagePNG, imagePNG2x, imageWEBP, imageWEBP2x }: Review) => {
+const ReviewCart = ({ name, review, images }: Review) => {
+  const { normal, retina } = images;
+
   return (
     <>
       <picture>
         <source
           media='(min-width:375px)'
           type='image/webp'
-          srcSet={`${imageWEBP} 1x, ${imageWEBP2x} 2x`}
+          srcSet={`${normal.png} 1x, ${retina.png} 2x`}
         />
         <source
           media='(min-width:375px)'
           type='image/png'
-          srcSet={`${imagePNG} 1x, ${imagePNG2x} 2x`}
+          srcSet={`${normal.png} 1x, ${retina.png} 2x`}
         />
         <img
-          src={imagePNG}
+          src={normal.png}
           alt={`Image with author ${name}`}
           className='block mx-auto max-w-[56px] mb-6'
         />

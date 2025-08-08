@@ -1,14 +1,13 @@
 import Container from '../Container/Container';
 import './ReviewsList.css';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
-import { Pagination } from 'swiper/modules';
-import 'swiper/css/pagination';
-
 import ReviewCart from '../ReviewCart/ReviewCart';
 import useReviewsStore from '../../zustand/reviews';
+
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay, Navigation, Mousewheel } from 'swiper/modules';
 
 const ReviewsList = () => {
   const reviews = useReviewsStore(state => state.reviews);
@@ -28,11 +27,17 @@ const ReviewsList = () => {
           spaceBetween={20}
           slidesPerView={1}
           loop={true}
+          mousewheel={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
           pagination={{
             clickable: true,
             el: '.custom-pagination',
           }}
-          modules={[Pagination]}
+          modules={[Pagination, Navigation, Mousewheel, Autoplay]}
           breakpoints={{
             768: { slidesPerView: 2 },
             1280: { slidesPerView: 3 },

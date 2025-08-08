@@ -1,18 +1,3 @@
-import mobSocialPNG from '/images/mobSocial.png';
-import mobSocialPNG2x from '/images/mobSocial2x.png';
-import mobSocialWEBP from '/images/mobSocial.webp';
-import mobSocialWEBP2x from '/images/mobSocial2x.webp';
-
-import tabSocialPNG from '/images/tabSocial.png';
-import tabSocialPNG2x from '/images/tabSocial2x.png';
-import tabSocialWEBP from '/images/tabSocial.webp';
-import tabSocialWEBP2x from '/images/tabSocial2x.webp';
-
-import deskSocialPNG from '/images/deskSocial.png';
-import deskSocialPNG2x from '/images/deskSocial2x.png';
-import deskSocialWEBP from '/images/deskSocial.webp';
-import deskSocialWEBP2x from '/images/deskSocial2x.webp';
-
 const OrderCart = () => {
   return (
     <div className='bg-[var(--secondary-bg-section)] rounded-[30px] py-10 px-5 md:py-13 md:px-13 xl:px-12'>
@@ -20,38 +5,38 @@ const OrderCart = () => {
         <source
           media='(min-width:1280px)'
           type='image/webp'
-          srcSet={`${deskSocialWEBP} 1x, ${deskSocialWEBP2x} 2x`}
+          srcSet='/images/deskSocial.webp 1x, /images/deskSocial2x.webp 2x'
         />
         <source
           media='(min-width:1280px) '
           type='image/png'
-          srcSet={`${deskSocialPNG} 1x, ${deskSocialPNG2x} 2x`}
+          srcSet='/images/deskSocial.png 1x, /images/deskSocial2x.png 2x'
         />
 
         <source
           media='(min-width:768px)'
           type='image/webp'
-          srcSet={`${tabSocialWEBP} 1x, ${tabSocialWEBP2x} 2x`}
+          srcSet='/images/tabSocial.webp 1x, /images/tabSocial2x.webp 2x'
         />
         <source
           media='(min-width:768px) '
           type='image/png'
-          srcSet={`${tabSocialPNG} 1x, ${tabSocialPNG2x} 2x`}
+          srcSet='/images/tabSocial.png 1x, /images/tabSocial2x.png 2x'
         />
 
         <source
           media='(max-width:767px)'
           type='image/webp'
-          srcSet={`${mobSocialWEBP} 1x, ${mobSocialWEBP2x} 2x`}
+          srcSet='/images/mobSocial.webp 1x, /images/mobSocial2x.webp 2x'
         />
         <source
           media='(max-width:767px)'
           type='image/png'
-          srcSet={`${mobSocialPNG} 1x, ${mobSocialPNG2x} 2x`}
+          srcSet='/images/mobSocial.png 1x, /images/mobSocial2x.png 2x'
         />
 
         <img
-          src={mobSocialPNG}
+          src='/images/mobSocial.png'
           alt='Image with woman'
           className='block mx-auto mb-4 md:mb-13 xl:mb-20'
         />

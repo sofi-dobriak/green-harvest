@@ -1,17 +1,3 @@
-import mobAboutPNG from '/images/mobAbout.png';
-import mobAboutPNG2x from '/images/mobAbout2x.png';
-import mobAboutWEBP from '/images/mobAbout.webp';
-import mobAboutWEBP2x from '/images/mobAbout2x.webp';
-
-import tabAboutPNG from '/images/tabAbout.png';
-import tabAboutPNG2x from '/images/tabAbout2x.png';
-import tabAboutWEBP from '/images/tabAbout.webp';
-import tabAboutWEBP2x from '/images/tabAbout2x.webp';
-
-import deskAboutPNG from '/images/deskAbout.png';
-import deskAboutPNG2x from '/images/deskAbout2x.png';
-import deskAboutWEBP from '/images/deskAbout.webp';
-import deskAboutWEBP2x from '/images/deskAbout2x.webp';
 import Container from '../Container/Container';
 
 const HowItWorks = () => {
@@ -24,37 +10,37 @@ const HowItWorks = () => {
           <source
             media='(min-width:1280px)'
             type='image/webp'
-            srcSet={`${deskAboutWEBP} 1x, ${deskAboutWEBP2x} 2x`}
+            srcSet='/images/deskAbout.webp 1x, /images/deskAbout2x.webp 2x'
           />
           <source
             media='(min-width:1280px) '
             type='image/png'
-            srcSet={`${deskAboutPNG} 1x, ${deskAboutPNG2x} 2x`}
+            srcSet='/images/deskAbout.png 1x, /images/deskAbout2x.png 2x'
           />
 
           <source
             media='(min-width:768px)'
             type='image/webp'
-            srcSet={`${tabAboutWEBP} 1x, ${tabAboutWEBP2x} 2x`}
+            srcSet='/images/tabAbout.webp 1x, /images/tabAbout2x.webp 2x'
           />
           <source
             media='(min-width:768px) '
             type='image/png'
-            srcSet={`${tabAboutPNG} 1x, ${tabAboutPNG2x} 2x`}
+            srcSet='/images/tabAbout.png 1x, /images/tabAbout2x.png 2x'
           />
 
           <source
             media='(max-width:767px)'
             type='image/webp'
-            srcSet={`${mobAboutWEBP} 1x, ${mobAboutWEBP2x} 2x`}
+            srcSet='/images/mobAbout.webp 1x, /images/mobAbout2x.webp 2x'
           />
           <source
             media='(max-width:767px)'
             type='image/png'
-            srcSet={`${mobAboutPNG} 1x, ${mobAboutPNG2x} 2x`}
+            srcSet='/images/mobAbout.png 1x, /images/mobAbout2x.png 2x'
           />
 
-          <img src={mobAboutPNG} alt='Image with woman' className='block mx-auto' />
+          <img src='/images/mobAbout.png' alt='Image with woman' className='block mx-auto' />
         </picture>
       </div>
 

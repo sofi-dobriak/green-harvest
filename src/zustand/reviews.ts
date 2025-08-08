@@ -1,6 +1,21 @@
 import { create } from 'zustand';
 import reviewsData from '../data/reviews.json';
-import type { Review } from '../types/review';
+
+interface Image {
+  png: string;
+  webp: string;
+}
+
+interface ImageVariants {
+  normal: Image;
+  retina: Image;
+}
+
+export interface Review {
+  name: string;
+  review: string;
+  images: ImageVariants;
+}
 
 interface ReviewsStore {
   reviews: Review[];

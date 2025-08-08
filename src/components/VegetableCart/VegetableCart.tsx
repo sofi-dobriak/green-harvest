@@ -1,19 +1,9 @@
-import type { Vegetable } from '../../types/vegetable';
+import type { Vegetable } from '../../zustand/vegetable';
 import '../VegetableCart/VegetableCart.css';
 
-const VegetableCart = ({
-  title,
-  mass,
-  tabImagePNG,
-  tabImageWEBP,
-  tabImagePNG2x,
-  tabImageWEBP2x,
-  deskImagePNG,
-  deskImageWEBP,
-  deskImagePNG2x,
-  deskImageWEBP2x,
-  description,
-}: Vegetable) => {
+const VegetableCart = ({ title, mass, images, description }: Vegetable) => {
+  const { tab, desk } = images;
+
   return (
     <li className='cart w-full max-w-[340px] md:min-w-[280px] min-h-[380px]'>
       <div className='content'>
@@ -29,24 +19,24 @@ const VegetableCart = ({
             <source
               media='(min-width:768px)'
               type='image/webp'
-              srcSet={`${deskImageWEBP} 1x, ${deskImageWEBP2x} 2x`}
+              srcSet={`${desk.normal.webp} 1x, ${desk.retina.webp} 2x`}
             />
             <source
               media='(min-width:768px)'
               type='image/png'
-              srcSet={`${deskImagePNG} 1x, ${deskImagePNG2x} 2x`}
+              srcSet={`${desk.normal.png} 1x, ${desk.retina.png} 2x`}
             />
             <source
               media='(max-width:767px)'
               type='image/webp'
-              srcSet={`${tabImageWEBP} 1x, ${tabImageWEBP2x} 2x`}
+              srcSet={`${tab.normal.webp} 1x, ${tab.retina.webp} 2x`}
             />
             <source
               media='(max-width:767px)'
               type='image/png'
-              srcSet={`${tabImagePNG} 1x, ${tabImagePNG2x} 2x`}
+              srcSet={`${tab.normal.png} 1x, ${tab.retina.png} 2x`}
             />
-            <img src={tabImagePNG} alt={`Image with ${title}`} className='block mx-auto' />
+            <img src={tab.normal.png} alt={`Image with ${title}`} className='block mx-auto' />
           </picture>
         </div>
 
