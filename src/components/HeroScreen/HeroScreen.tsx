@@ -2,7 +2,7 @@ import Container from '../Container/Container';
 
 const HeroScreen = () => {
   return (
-    <section className='xl:flex xl:items-center xl:justify-center'>
+    <section className='xl:flex xl:items-center xl:justify-center' data-aos='fade-up'>
       <Container>
         <h1 className='uppercase font-semibold text-[44px] md:text-[70px] leading-none md:max-w-[704px] xl:max-w-[502px] text-[var(--light-text-color)] mb-5 md:mb-6 xl:mb-32 pt-[100px] px-5 md:px-8 xl:px-0'>
           organic vegetables to your diet today!

@@ -5,7 +5,10 @@ const HowItWorks = () => {
     <section className='xl:flex xl:mx-auto xl:max-w-[1280px]' id='works'>
       <h2 className='visually-hidden'>How It Works</h2>
 
-      <div className='bg-[var(--secondary-bg-section)] w-full py-10 px-5 md:py-25 md:px-16 xl:p-25 xl:max-w-[640px]'>
+      <div
+        className='bg-[var(--secondary-bg-section)] w-full py-10 px-5 md:py-25 md:px-16 xl:p-25 xl:max-w-[640px]'
+        data-aos='fade-right'
+      >
         <picture>
           <source
             media='(min-width:1280px)'
@@ -45,7 +48,10 @@ const HowItWorks = () => {
       </div>
 
       <Container>
-        <div className='bg-[var(--background-color)] py-20 px-5 md:py-25 md:px-41 md:mb-6 xl:px-20'>
+        <div
+          className='bg-[var(--background-color)] py-20 px-5 md:py-25 md:px-41 md:mb-6 xl:px-20'
+          data-aos='fade-left'
+        >
           <h2 className='font-semibold text-[28px] uppercase leading-none text-[var(--light-text-color)] mb-5 md:text-[32px]'>
             To order your <span className='text-[var(--accent-text-color)]'>vegetable</span> basket,
             simply follow these <span className='text-[var(--accent-text-color)]'>easy steps</span>

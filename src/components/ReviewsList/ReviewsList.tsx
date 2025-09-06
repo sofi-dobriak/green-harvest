@@ -13,7 +13,11 @@ const ReviewsList = () => {
   const reviews = useReviewsStore(state => state.reviews);
 
   return (
-    <section className='bg-[var(--hover-light-bg)] py-20 px-5 md:px-8 xl:px-25' id='reviews'>
+    <section
+      className='bg-[var(--hover-light-bg)] py-20 px-5 md:px-8 xl:px-25'
+      id='reviews'
+      data-aos='fade-up'
+    >
       <Container>
         <h2 className='font-semibold text-[48px] md:text-[64px] leading-[1] max-w-[336px] md:max-w-[554px] uppercase text-[var(--dart-text-color)] mb-5 md:mb-6'>
           reviews from our <span className='text-[var(--background-color)]'>customers</span>

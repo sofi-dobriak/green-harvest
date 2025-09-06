@@ -17,7 +17,10 @@ const YourOrder = () => {
         </p>
 
         <div className='flex flex-col gap-5 md:gap-8 xl:flex-row xl:justify-center'>
-          <div className='bg-[var(--hover-light-bg)] py-10 px-5 rounded-[30px] md:py-13 md:px-25 xl:py-13 xl:px-12'>
+          <div
+            className='bg-[var(--hover-light-bg)] py-10 px-5 rounded-[30px] md:py-13 md:px-25 xl:py-13 xl:px-12'
+            data-aos='fade-right'
+          >
             <p className='font-semibold text-[27px] md:text-[32px] leading-[1] uppercase text-[var(--dart-text-color)] mb-10 max-w-[295px] md:max-w-[440px] xl:max-w-[428px]'>
               Ordering <span className='text-[var(--hover-text-color)]'>from us</span> is quick and
               easy! Fill out <span className='text-[var(--background-color)]'>the form</span> below

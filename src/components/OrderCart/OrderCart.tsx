@@ -1,6 +1,9 @@
 const OrderCart = () => {
   return (
-    <div className='bg-[var(--secondary-bg-section)] rounded-[30px] py-10 px-5 md:py-13 md:px-13 xl:px-12'>
+    <div
+      className='bg-[var(--secondary-bg-section)] rounded-[30px] py-10 px-5 md:py-13 md:px-13 xl:px-12'
+      data-aos='fade-left'
+    >
       <picture>
         <source
           media='(min-width:1280px)'

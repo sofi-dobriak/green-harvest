@@ -11,9 +11,20 @@ import Footer from './components/Footer/Footer';
 import Modal from './components/Modal/Modal';
 import BackToTop from './components/BackToTop/BackToTop';
 import InfoMessage from './components/InfoMessage/InfoMessage';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const isDesktop: boolean = useMediaQuery({ minWidth: 1280 });
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 250,
+    });
+  }, []);
 
   return (
     <>

@@ -5,7 +5,7 @@ const Advertisement = () => {
   const isDesktop = useMediaQuery({ minWidth: 1280 });
 
   return (
-    <section className='py-20 md:py-25 px-5 md:px-8 xl:px-25 bg-[#fbfbfb]'>
+    <section className='py-20 md:py-25 px-5 md:px-8 xl:px-25 bg-[#fbfbfb]' data-aos='fade-right'>
       <Container>
         <h2 className='visually-hidden'>Discount</h2>
 

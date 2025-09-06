@@ -9,6 +9,7 @@ const VegetableList = () => {
     <section
       className='bg-[var(--secondary-bg-section)] py-20 px-5 md:px-8 xl:px-25'
       id='vegetables'
+      data-aos='fade-up'
     >
       <Container>
         <h2 className='uppercase font-semibold text-[var(--light-text-color)] text-[48px] md:text-[64px] leading-[1] mb-5 md:mb-6'>
